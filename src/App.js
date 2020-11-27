@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.scss'
+import { SearchContext } from './context/searchContext'
+import { AppRouter } from './router/AppRouter'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+
+    const [page, setPage] = useState([])
+    const [search, setSearch] = useState()
+    const [pagination, setPagination] = useState()
+
+    return (
+        <SearchContext.Provider value={{
+            page,
+            setPage,
+            search,
+            setSearch,
+            pagination,
+            setPagination,
+        }}>
+            <AppRouter />
+        </SearchContext.Provider>
+    )
 }
-
-export default App;

@@ -1,0 +1,28 @@
+@import '../../scss/index.scss';
+
+.oompa-item{
+    width: 100%;
+    border: none;
+    margin-bottom: 1.5rem;
+    &__body{
+        padding: .5rem 0;
+
+        &--link{
+            color: $font-dark;
+            transition: color .15s ease;
+            .title{
+                font-size: $font-size;
+                font-weight: bold;
+                margin-bottom: .3rem;
+            }
+            &:hover{
+                text-decoration: none;
+                color: $high-blue;
+            }
+        }
+        &--text{
+            margin-bottom: 0;
+            font-size: $font-size / 1.2;
+        }
+    }
+}

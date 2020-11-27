@@ -1,0 +1,13 @@
+@import '../../scss/index.scss';
+
+.oompa-single{
+    margin-top: 3rem;
+    .img-fluid{
+        margin-bottom: 1rem;
+    }
+
+    .detaills{
+        @include flex(100%, column, flex-start, flex-start);
+        margin-bottom: 1rem;
+    }
+}

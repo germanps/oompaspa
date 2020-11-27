@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <Input /> should show component correctly with its props  1`] = `
+<div
+  className="input-wrapper"
+>
+  <label
+    className="sr-only"
+    htmlFor="search"
+  >
+    Búsqueda
+  </label>
+  <input
+    autoComplete="off"
+    className="control"
+    id="search"
+    name="search"
+    onChange={[Function]}
+    placeholder="Search"
+    style={
+      Object {
+        "backgroundImage": "url(ic_search.png)",
+        "backgroundPosition": "right 5px bottom 5px",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "10px",
+      }
+    }
+    type="text"
+  />
+</div>
+`;

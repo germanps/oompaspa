@@ -1,0 +1,26 @@
+@import "../../scss/index.scss";
+
+.slogans-wrapper{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    @media(min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width: 992px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.button-wrapper{
+    @include flex(100%, row, space-between, center, wrap);
+    .page{
+        background-color: $action;
+        color: white;
+        cursor: default !important;
+    }
+}

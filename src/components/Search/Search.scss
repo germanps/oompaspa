@@ -1,0 +1,7 @@
+@import "../../scss/index.scss";
+
+.search-container{
+    @include flex(100%, row, flex-end, center);
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}

@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Intro
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this app have been used modern features such as `functional components`, `hooks( also custom )` and `context api`
+In the layout bootstrap framework has been included and own styles have been included with sass by component
 
-## Available Scripts
+The application is available publicly at the following URL
+`https://oompaspagermanps.netlify.app`
 
-In the project directory, you can run:
+# Getting Started
 
-### `yarn start`
+* Clone repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Type npm install from directory root
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* To start app type `npm start` or `yarn start`
+    Runs the app in the development mode.\
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    The page will reload if you make edits.\
+    You will also see any lint errors in the console.
 
-### `yarn test`
+* To run testing type `npm run test` or `yarn run test`
+    Launches the test runner in the interactive watch mode.\
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* To build type `npm run build`
+    Builds the app for production to the `build` folder.\
+    It correctly bundles React in production mode and optimizes the build for the best performance.
+    The build is minified and the filenames include the hashes.\
+    Your app is ready to be deployed!
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# App Requirements
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app must be a spa with two views. In the first view (MainView) we will find the first Oompa with a search engine to be able to find each one of them on the page shown. We can filter the search by name, surname and profession. We have also included a pager with back and forth functionality. At all times you will see which page we are on.
+When you click on a title of each oompa, you will be able to see the detail of said oompa (DetailView). This navigation will be done through router-dom being able to return to home from the detail. When the application is accessed again on another occasion, the data will be loaded from the client without the need to make another query to the server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+# Packages used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* node-sass to styles
+* prop-types to check data types in components
+* react-router-dom to navigate between routes in the application
+* enzyme to testing suit
+* enzyme-to-json to testing components views render
+* testing react-hooks to testing hooks
+* enzyme-adapter-react-17 to resolve problem in react v17 with enzyme

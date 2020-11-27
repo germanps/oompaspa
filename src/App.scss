@@ -1,0 +1,18 @@
+@import './scss/index.scss';
+
+*{
+    font-family: $font;
+    box-sizing: border-box;
+}
+body{
+    font-size: $font-size;
+}
+
+//generics
+.oompa-spa{
+    margin-bottom: 2rem;
+}
+.ghost-btn{
+    visibility: hidden;
+    width: 145px;
+}

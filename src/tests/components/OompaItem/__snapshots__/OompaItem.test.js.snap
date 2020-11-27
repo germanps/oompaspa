@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <OompaItem /> should show component correctly with its props 1`] = `
+<div
+  className="oompa-item card"
+>
+  <img
+    alt="Test"
+    className="card-img-top"
+    src="some url or link"
+  />
+  <div
+    className="card-body oompa-item__body"
+  >
+    <Link
+      className="oompa-item__body--link"
+      to="./oompa/1"
+    >
+      <h3
+        className="title"
+      >
+        Test
+      </h3>
+    </Link>
+    <p
+      className="oompa-item__body--text"
+    >
+      Man
+    </p>
+    <p
+      className="oompa-item__body--text"
+    >
+      Something
+    </p>
+  </div>
+</div>
+`;

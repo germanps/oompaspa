@@ -1,0 +1,16 @@
+@import "../../scss/index.scss";
+
+.input-wrapper{
+
+    .control{
+        border: 1px solid $border-grey-dark;
+        border-radius: 3px;
+        max-width: 150px;
+        padding: 0 5px;
+        
+        &:focus{
+            outline: none;
+            border: 1px solid $bronze; 
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../scss/index.scss';
+
+.header-navbar{
+    background-color: $background-grey-light / 1.2;
+    padding: 1rem * .5;
+    .flex-wrapper{
+        @include flex(100%, row, flex-start, center);
+    }
+    .logo-link{
+        margin-right: 1rem;
+        .img-wrapper{
+            width: 30px;
+            .logo{
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+    }
+    .main-title{
+        @include title(16px, $font-dark, left, 0, bold)
+    }
+}
